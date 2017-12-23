@@ -37,7 +37,7 @@ public class RestApiController {
      * @return ResponseEntity
      */
 
-    @RequestMapping(value = "/stocks/", method = RequestMethod.GET)
+    @RequestMapping(value = "/stock/", method = RequestMethod.GET)
     public ResponseEntity<List<Stock>> listAllStocks() {
         List<Stock> stocks = stockService.findAllStocks();
         if (stocks.isEmpty()) {
@@ -140,7 +140,7 @@ public class RestApiController {
      * @return ResponseEntity
      */
 
-    @RequestMapping(value = "/stocks/", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/stock/", method = RequestMethod.DELETE)
     public ResponseEntity<Stock> deleteAllStocks() {
         logger.info("Deleting All Stocks");
 

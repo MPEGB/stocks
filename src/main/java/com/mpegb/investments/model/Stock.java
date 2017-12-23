@@ -9,7 +9,7 @@ import java.io.Serializable;
  * Created by bhushan on 23/12/2017.
  */
 @Entity
-@Table(name="APP_STOCK")
+@Table(name="STOCK")
 public class Stock implements Serializable{
 
     @Id
@@ -63,11 +63,11 @@ public class Stock implements Serializable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Stock user = (Stock) o;
+        Stock stock = (Stock) o;
 
-        if (id != null ? !id.equals(user.id) : user.id != null) return false;
-        if (name != null ? !name.equals(user.name) : user.name != null) return false;
-        return currentPrice != null ? currentPrice.equals(user.currentPrice) : user.currentPrice == null;
+        if (id != null ? !id.equals(stock.id) : stock.id != null) return false;
+        if (name != null ? !name.equals(stock.name) : stock.name != null) return false;
+        return currentPrice != null ? currentPrice.equals(stock.currentPrice) : stock.currentPrice == null;
     }
 
     @Override
@@ -81,7 +81,7 @@ public class Stock implements Serializable{
 
     @Override
     public String toString() {
-        return "User [id=" + id + ", name=" + name + ", currentPrice=" + currentPrice
+        return "Stock [id=" + id + ", name=" + name + ", currentPrice=" + currentPrice
                 + ", lastUpdate=" + lastUpdate + "]";
     }
 }
