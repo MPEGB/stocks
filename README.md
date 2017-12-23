@@ -6,9 +6,9 @@ PUT /api/stocks/{id} (update the price of a single stock)
 POST /api/stocks (create a stock)
 DELETE /api/stocks/{id} (delete a stock)
 
-Application support profile 2 different profiles which are local and prod
+Application support two different profiles which are local and prod
  - local profile uses in-memory database
- - prob profile uses mysql database
+ - prod profile uses mysql database
 
 
 Steps to build application
@@ -18,7 +18,8 @@ Type -> mvn clean install
 
 In order to run application
  - Go to root directory 
- - To run local profile type -> java -jar target/stocks-1.0.0.jar --spring.profiles.active=local
+ - To run local profile type
+    - java -jar target/stocks-1.0.0.jar --spring.profiles.active=local
  - To run prod profile 
     - Execute script from stock.sql on mysql DB
     - Go to root directory type -> java -jar target/stocks-1.0.0.jar --spring.profiles.active=prod
