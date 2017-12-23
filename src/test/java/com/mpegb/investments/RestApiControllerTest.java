@@ -67,7 +67,7 @@ public class RestApiControllerTest {
         ResponseEntity<List<Stock>> testAllStocks = new ResponseEntity<List<Stock>>(allStocks, HttpStatus.OK);
         given(restApiController.listAllStocks()).willReturn(testAllStocks);
 
-        mockMvc.perform(get("/api/stocks/")
+        mockMvc.perform(get("/api/stock/")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
@@ -123,7 +123,7 @@ public class RestApiControllerTest {
         ResponseEntity resultStock = new ResponseEntity<Stock>(new HttpHeaders(),HttpStatus.OK);
         given(restApiController.deleteAllStocks()).willReturn(resultStock);
 
-        mockMvc.perform(delete("/api/stocks/")
+        mockMvc.perform(delete("/api/stock/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(testStock)))
                 .andExpect(status().isOk());
