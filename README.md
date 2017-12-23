@@ -31,6 +31,6 @@ After successful execution user will be able to view/create/update/delete stocks
 
 ![Alt text](/documentation/add-more.png?raw=true "Create More Stock")
 
-![Alt text](/documentation/update-stock?raw=true "Update Stock")
+![Alt text](/documentation/update-stock.png?raw=true "Update Stock")
 
-![Alt text](/documentation/remove-stock?raw=true "Delete Stock")
+![Alt text](/documentation/remove-stock.png?raw=true "Delete Stock")
