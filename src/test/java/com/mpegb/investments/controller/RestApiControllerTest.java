@@ -1,4 +1,4 @@
-package com.mpegb.investments;
+package com.mpegb.investments.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mpegb.investments.configuration.JpaConfiguration;
