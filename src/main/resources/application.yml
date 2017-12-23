@@ -4,7 +4,7 @@ server:
   contextPath: /StocksApp
 ---
 spring:
-  profiles: local, default
+  profiles: local
 datasource:
   stockapp:
     url: jdbc:h2:~/test
